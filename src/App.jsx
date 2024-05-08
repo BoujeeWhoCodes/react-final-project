@@ -32,7 +32,7 @@ function App() {
 	}, [allLoadings]);
 
 	
-	const [city, setCity] = useState('Karachi');
+	const [city, setCity] = useState('Bodrum');
 
 
 	const [unit, setUnit] = useState('metric'); // metric = C and imperial = F
