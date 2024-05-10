@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 import './index.css';
 import { Provider } from 'react-redux';
-import store from import { useState, useEffect } from 'react';
+import store from './path/to/store' ;
 import Icon from 'react-icons-kit';
 import { search } from 'react-icons-kit/feather/search';
 import { arrowUp } from 'react-icons-kit/feather/arrowUp';
