@@ -21,32 +21,25 @@ function App() {
 		forecastError,
 	} = useSelector((state) => state.weather);
 
-	
 	const [loadings, setLoadings] = useState(true);
 
-	
 	const allLoadings = [citySearchLoading, forecastLoading];
 	useEffect(() => {
 		const isAnyChildLoading = allLoadings.some((state) => state);
 		setLoadings(isAnyChildLoading);
 	}, [allLoadings]);
 
-	
 	const [city, setCity] = useState('Bodrum');
 
-
 	const [unit, setUnit] = useState('metric'); // metric = C and imperial = F
-
 
 	const toggleUnit = () => {
 		setLoadings(true);
 		setUnit(unit === 'metric' ? 'imperial' : 'metric');
 	};
 
-	h
 	const dispatch = useDispatch();
 
-	
 	const fetchData = () => {
 		dispatch(
 			getCityData({
